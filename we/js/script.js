@@ -1,0 +1,1 @@
+document.querySelector("p").innerHTML = "这是随便写的东西";
