@@ -1,0 +1,103 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-image: url(../img/bj.png);
+  background-size: cover;
+  /* Center slide text vertically */
+}
+/*--- 首页样式 ---*/
+
+.s1 .header img,.s1 .text,.s1 .footer,.s1 .bottom img{
+    position: absolute;
+}
+.s1 .header img:nth-of-type(1){
+    position: absolute;
+    width: 35px;
+    top:120px;
+    left:50px;
+}
+.s1 .header img:nth-of-type(2){
+    width: 65px;
+    top:90px;
+    right:40px;
+}
+.s1 .header img:nth-of-type(3){
+    width: 55px;
+    left:35px;
+    bottom:180px;
+}
+.s1 .header img:nth-of-type(4){
+    width: 50px;
+    right:50px;
+    bottom: 210px;
+}
+.s1 .header img:nth-of-type(5){
+    width: 186px;
+    top:176px;
+    left:100px; 
+}
+.s1 .text {
+    top:200px;
+    text-align: center;
+}
+.s1 .text img:nth-of-type(1){
+    width: 126px;
+}
+.s1 .text img:nth-of-type(2){
+    width: 250px;
+}
+.s1 .text p{
+    width: 170px;
+    height:20px;
+    font-size: 14px;
+    line-height: 20px;
+    background: url(../img/9.png);
+    background-size:100%;
+    margin-top: 20px;
+    margin-left: 106px;
+}
+.s1 .footer{
+    text-align: center;
+    color:aqua;
+    top:auto;
+    bottom:110px;
+    margin-left: 65px;
+}
+.s1 .footer p{
+    margin: 0;
+}
+.s1 .bottom img{
+    top:auto;
+    bottom: 0px;
+    right:-140px;
+    width: 600px;
+}
+.s1 .bottom img:nth-of-type(1){
+    right:-20px;
+}
+/*--- 首页样式 ---*/
+/*--- 样式 ---*/
+.swiper-button-next{
+  position: absolute;
+  top:auto;
+  bottom: 0px;
+  left:50%;
+  transform: rotateZ(-90deg);
+  margin-left: -13.5px;
+}
