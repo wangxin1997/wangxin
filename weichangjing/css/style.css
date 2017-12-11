@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html, body {
     position: relative;
     height: 100%;
@@ -42,90 +43,192 @@ body {
     transform: rotateZ(-90deg);
 }
 
-
 /* .s1*/
 
-.s1 {
+.s1, .s2 {
     background: url("../img/bj.png");
     height: 100%;
 }
 
-.s1 .header img{
+.s1 .header img {
     position: absolute;
 }
 
-.s1 .header img:nth-of-type(1){
+.s1 .header img:nth-of-type(1) {
     width: 35px;
     top: 120px;
     left: 50px;
 }
 
-.s1 .header img:nth-of-type(2){
+.s1 .header img:nth-of-type(2) {
     width: 65px;
     top: 90px;
     right: 40px;
 }
 
-.s1 .header img:nth-of-type(3){
+.s1 .header img:nth-of-type(3) {
     width: 55px;
     left: 35px;
     bottom: 180px;
 }
-.s1 .header img:nth-of-type(4){
+
+.s1 .header img:nth-of-type(4) {
     width: 50px;
     right: 50px;
     bottom: 210px;
 }
-.s1 .header img:nth-of-type(5){
+
+.s1 .header img:nth-of-type(5) {
     left: 50%;
     top: 25%;
     width: 60%;
     margin-left: -30%;
+    animation:pulse infinite 5s;
 }
 
-/* 文字部分 */
-.s1 .main{
+/*首页文字部分*/
+
+.s1 .main {
     position: absolute;
     top: 30%;
 }
-.s1 .main img:nth-of-type(1){
+
+.s1 .main img:nth-of-type(1) {
     width: 40%;
 }
-.s1 .main img:nth-of-type(2){
+
+.s1 .main img:nth-of-type(2) {
     width: 80%;
     margin-bottom: 20px;
 }
-.s1 .main p{
-    background: url(../img/9.png);
+
+.s1 .main .img9 {
+    background: url("../img/9.png");
     background-size: cover;
     width: 207px;
     height: 24px;
+    margin: auto;
     font-weight: bold;
-    margin:auto;
 }
-.s1 .footer{
-    width: 100%;
+
+.s1 .footer {
+    color: #01e2ba;
     position: absolute;
-    bottom: 0px;
-    color:#0bdebd;
-    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
 }
-.s1 .footer h2{
+
+.s1 .footer h2 {
     font-size: 18px;
+    margin-bottom: 15px;
 }
-.s1 .footer p:nth-of-type(1){
-    margin-top: 10px;
-    margin-bottom: 100px;
+
+.s1 .footer p:nth-of-type(1) {
     font-size: 16px;
+    margin-bottom: 40px;
 }
-.s1 .footer p img{
+
+.s1 .footer p:nth-of-type(2) {
+    height: 70px;
+}
+
+.s1 .footer img {
     height: 70px;
     position: absolute;
-    bottom: 0px;
 }
-.s1 .footer img:nth-of-type(1){
-    left:20px;
+
+.s1 .footer img:nth-of-type(1) {
+    left: 0;
 }
-.s1 .footer img:nth-of-type(2){
-    left:-90px;
+
+.s1 .footer img:nth-of-type(2) {
+    left: -90px;
+}
+
+/*第二屏的样式*/
+
+.s2 {
+    color: #00f0c3;
+}
+
+.s2 h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+
+.s2 h2::before,
+.s2 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.s2 h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+
+.s2 h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+
+.s2 h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.s2 img {
+    width: 80%;
+}
+
+.s2 .main {
+    position: relative;
+}
+
+.s2 .text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 14px;
+}
+
+.s2 .text p {
+    margin-bottom: 10px;
+    line-height: 26px;
+    color: #01e2ba;
+}
+
+.s2 span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 120px;
+    height: 30px;
+    margin-left: -60px;
+    background: -moz-linear-gradient(left, #00e7f7, #00fc9f); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00e7f7), to(#00fc9f)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00e7f7, #00fc9f); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00e7f7, #00fc9f); /*Opera11*/
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
 }
