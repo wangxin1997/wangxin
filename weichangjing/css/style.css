@@ -31,6 +31,10 @@ body {
 }
 
 /*自定义样式  - 开始*/
+.s1,.s2,.s3,.s4,.s5,.s6,.s7 {
+    background: url("../img/bj.png");
+    height: 100%;
+}
 
 /*向下翻页的按钮*/
 .swiper-button-next {
@@ -42,7 +46,6 @@ body {
     margin-left: -13.5px;
     transform: rotateZ(-90deg);
 }
-
 
 /*音乐按钮*/
 .mp3btn{
@@ -70,13 +73,29 @@ body {
     width: 10px;
 }
 
+/* 云 */
+
+.yun{
+    position: absolute;
+    bottom: 0px;
+    left：0;
+    height: 70px;
+}
+
+.yun img{
+    height: 70px;
+    position: absolute;
+    z-index: 99;
+}
+.yun img:nth-of-type(1) {
+    left: 0;
+}
+
+.yun img:nth-of-type(2) {
+    left: -90px;
+}
 
 /* .s1*/
-
-.s1, .s2 {
-    background: url("../img/bj.png");
-    height: 100%;
-}
 
 .s1 .header img {
     position: absolute;
@@ -145,7 +164,7 @@ body {
 .s1 .footer {
     color: #01e2ba;
     position: absolute;
-    bottom: 0;
+    bottom: 70px;
     left: 0;
     width: 100%;
 
@@ -161,22 +180,6 @@ body {
     margin-bottom: 40px;
 }
 
-.s1 .footer p:nth-of-type(2) {
-    height: 70px;
-}
-
-.s1 .footer img {
-    height: 70px;
-    position: absolute;
-}
-
-.s1 .footer img:nth-of-type(1) {
-    left: 0;
-}
-
-.s1 .footer img:nth-of-type(2) {
-    left: -90px;
-}
 
 /*第二屏的样式*/
 
@@ -222,7 +225,7 @@ body {
     letter-spacing: 5px;
 }
 
-.s2 img {
+.s2 .bgimg {
     width: 80%;
 }
 
