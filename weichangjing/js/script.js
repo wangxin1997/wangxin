@@ -12,21 +12,8 @@ var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
     },
-});
-
-
- var mySwiper = new Swiper ('.swiper-container', {
-    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-      swiperAnimateCache(swiper); //隐藏动画元素 
-      swiperAnimate(swiper); //初始化完成开始动画
-    }, 
-    onSlideChangeEnd: function(swiper){ 
-      swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-    } 
-  }) 
-
-//Swiper4.x
-  var mySwiper = new Swiper ('.swiper-container', {
+    
+    //  动画效果
     on:{
       init: function(){
         swiperAnimateCache(this); //隐藏动画元素 
@@ -36,6 +23,21 @@ var swiper = new Swiper('.swiper-container', {
         swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
       } 
     }
-  })
+});
+
+
+/* 音乐按钮 */
+var mp3 = document.querySelector("#mp3");
+var mp3btn = document.querySelector(".mp3btn");
+mp3btn.onclick = function(){
+    if(mp3.paused){
+        mp3.play();
+        mp3btn.style.animationPlayState="running";
+    }else{
+        mp3.pause();
+        mp3btn.style.animationPlayState="paused";
+    }
+};
+
 
 

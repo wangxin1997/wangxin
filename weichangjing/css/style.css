@@ -43,6 +43,34 @@ body {
     transform: rotateZ(-90deg);
 }
 
+
+/*音乐按钮*/
+.mp3btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: rgba(53, 53, 53, 0.43);
+    border:3px solid rgba(84, 84, 84, 0.51);
+    right:2%;
+    top:2%;
+    z-index: 999;
+    text-align: center;
+    transform: rotateZ(0deg);
+    animation: mp3btnrotate 2.5s linear infinite;
+}
+
+@keyframes mp3btnrotate{
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}
+
+.mp3btn img{
+    width: 10px;
+}
+
+
 /* .s1*/
 
 .s1, .s2 {
@@ -78,12 +106,15 @@ body {
     bottom: 210px;
 }
 
+.swing{
+    transform-origin:center;
+}
+
 .s1 .header img:nth-of-type(5) {
     left: 50%;
     top: 25%;
     width: 60%;
     margin-left: -30%;
-    animation:pulse infinite 5s;
 }
 
 /*首页文字部分*/
@@ -173,6 +204,7 @@ body {
     background-size: cover;
     left: 45px;
     top: 45px;
+    transition-delay:0.5s;
 }
 
 .s2 h2::after {
@@ -180,6 +212,7 @@ body {
     background-size: cover;
     right: 45px;
     top: 45px;
+    transition-delay:0.5s;
 }
 
 .s2 h2 small {
@@ -211,7 +244,7 @@ body {
 
 .s2 .text p {
     margin-bottom: 10px;
-    line-height: 26px;
+    line-height: 20px;
     color: #01e2ba;
 }
 
