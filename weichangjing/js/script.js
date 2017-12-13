@@ -8,7 +8,6 @@ var swiper = new Swiper('.swiper-container', {
         //让分页器支持点击
         clickable: true,
     },
-
     // 前进按钮
     navigation: {
         nextEl: '.swiper-button-next',
@@ -40,5 +39,24 @@ mp3btn.onclick = function(){
     }
 };
 
+
+/* s4横条效果 */
+var swiper_warper = document.querySelector(".swiper-wrapper").style.transform;
+var swiper_slide = document.querySelectorAll(".swiper-slide");
+var tab = document.querySelectorAll(".s4 .main .datatable .tab");
+for(i=0;i<swiper_slide.length;i++){
+    if(swiper_slide[3].className=="swiper-slide swiper-slide-active"){
+        if(i==3){
+            console.log("3");
+            tab[0].style.animation="tab1 2s";
+        }
+    }
+}
+/*if(swiper_slide[3].className=="swiper-slide swiper-slide-active"){
+    console.log("3");
+    tab[0].style.animation="tab1 2s";
+}else{
+    console.log("4");
+}*/
 
 
