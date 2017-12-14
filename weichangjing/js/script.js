@@ -1,6 +1,7 @@
 var swiper = new Swiper('.swiper-container', {
     //Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
     direction: 'vertical',
+    //图片加载
     preloadImages:false,
     //分页器
     pagination: {
@@ -12,6 +13,8 @@ var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
     },
+    //开始时的索引
+    initialSlide:6,
     
     //  动画效果
     on:{
