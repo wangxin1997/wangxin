@@ -13,8 +13,6 @@ var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
     },
-    //开始时的索引
-    initialSlide:2,
     
     //  动画效果
     on:{
@@ -25,12 +23,12 @@ var swiper = new Swiper('.swiper-container', {
         slideChangeTransitionEnd: function(){ 
             swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
         },
+        /* 以下为s4横条动画 */
         slideChangeTransitionStart: function(){
             //this.activeIndex当前的slide的索引
             var arr = ["80%","40%","60%","35%","50%","25%"];
             var tab = document.querySelectorAll(".s4 .main .datatable .tab");
             if(this.activeIndex==3){
-                console.log("a");
                 tab[0].style.animation="tab1 1s";
                 tab[1].style.animation="tab2 1s";
                 tab[2].style.animation="tab3 1s";
@@ -42,7 +40,6 @@ var swiper = new Swiper('.swiper-container', {
                     tab[i].style.animationFillMode="forwards";
                 }
             }else{
-                console.log("4");
                 for(var i=0;i<tab.length;i++){
                     tab[i].style="";
                 }
@@ -114,5 +111,6 @@ division.onkeyup = function(){
 };
 var sub = document.querySelector("input[type='submit']");
 sub.onclick=function(){
+    alert("练习作品，还不能真正使用，有多处不足，请谅解");
     return false;
 }
